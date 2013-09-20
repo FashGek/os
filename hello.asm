@@ -6,9 +6,9 @@ STRLEN    equ $ - strHello
 
 [section .text] ; 代码区
 
-global start ; 导出函数
+global _start ; 导出函数
 
-start:
+_start:
   mov edx, STRLEN
   mov ecx, strHello
   mov ebx, 1
